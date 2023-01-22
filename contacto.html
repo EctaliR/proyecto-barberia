@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursos/reset.css">
+    <link rel="stylesheet" href="styles-contacto.css">
+    <title>BarberShop: Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1>
+                <img src="recursos\logo.jpg" alt="logo BarberShop" id="logo">
+            </h1>
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href="servicios.html">Servicios</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label  for="nombreApellido"> Nombre y Apellido</label>
+            <input type="text" name="nombreApellido" id="nombreApellido" class="input-padron" required>
+
+            <label for="correo"> Correo Electronico</label>
+            <input type="email" id="correo" class="input-padron" placeholder="Ejem. correo@mail.com" required>
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" placeholder="XXXX XXXX" required>
+
+            <label for="mensajelargo">Mensaje</label>
+            <textarea name="mensaje" id="mensajelargo" cols="30" rows="10" class="input-padron" required></textarea>
+
+            <fieldset >
+                <legend>Selecione el metodo de contacto</legend>
+                <label for="radio-email">
+                    <input type="radio" name="contacto" id="radio-email" value="email">Email
+                </label>
+
+                <label for="radio-telefono">
+                    <input type="radio" name="contacto" id="radio-telefono" value="telefono">Telefono
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contacto" id="radio-whatsapp" value="whatsapp" checked>Whatsapp
+                </label>
+            </fieldset>
+
+            <fieldset>
+                    <legend>En que horario le gustaria ser atendido</legend>
+                    <select name="horario" id="horarioAtencion">
+                        <option value="morning">Mañana</option>
+                        <option value="afternoon">Tarde</option>
+                        <option value="night">Noche</option>
+                    </select>
+            </fieldset>
+ 
+                
+                <label for="novedades">
+                    <input type="checkbox" name="Contacto" id="novedades-checkbox" checked>¿Te gustaria recibir novedades de la Barberia?
+                </label>
+                <!--Boton enviar -->
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+        <!-- Tabla de horarios de la barberia-->
+        <table>
+            <thead>
+                <tr>
+                    <td>Dia</td>
+                    <td>Horario</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>8am - 20pm</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>8am - 20pm</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>8am - 20pm</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </main>
+    <footer>
+        <img id="footerimg" src="recursos/image.png" alt="Logo Barberia">
+        <p class="copyright"> &copy; Copyright  BarberShop 2022- 2023</p>
+    </footer>
+</body>
+</html>
