@@ -141,3 +141,11 @@ footer{
     height: 150px;
 }
 
+@media screen and (max-width:480px){
+    .logo{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+}
