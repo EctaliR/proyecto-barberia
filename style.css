@@ -155,7 +155,7 @@ footer{
     z-index: -1;
     margin: -10px;
     border-radius: inherit;
-    background: linear-gradient(to bottom, #c23f3f 0%,  #4c8ae6 100%);
+    background: linear-gradient(to bottom, #c23f3f 0%, #FFFFFF, #4c8ae6 100%);
 }
 
 .principal p{
@@ -229,8 +229,4 @@ footer{
         width: 100%;
         margin: 0 auto 10px;
     }
-
-
-
-
 }
